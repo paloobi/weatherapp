@@ -1,3 +1,12 @@
-<%= @weather %>
+<style>
+	body {
+		background-image: url("cloudy.png");
+	}
+</style>
 
-<%= @location%>
+<div>
+	<p>The weather in <%= @location %></p>
+	<p id="temp"><%= @temp %></p>
+	<p>and</p>
+	<p id="weather"><%= @weather %></p>
+</div>
