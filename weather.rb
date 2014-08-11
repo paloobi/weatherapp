@@ -14,6 +14,13 @@ def determine_location(location)
 	state = location_info['region'].upcase
 	country = location_info['country'].capitalize
 	final_location = "#{city}, #{state}, #{country}"
+	return final_location
+end
+
+def determine_temp(location)
+	client = Weatherman::Client.new
+	temp = client.lookup_by_location(location).condition['temp']
+	return temp
 end
 
 get '/' do
@@ -24,7 +31,8 @@ post '/weather' do
 	@post = params[:post]["location"]
 	@weather = determine_weather(@post)
 	@location = determine_location(@post)
-	
+	@temp = determine_temp(@post)
+		
 	"#{@weather}"
 	
 	case @weather
@@ -38,6 +46,8 @@ post '/weather' do
 		erb :fair
 	when 'partly cloudy'
 		erb :partly_cloudy
+	when 'rainy'
+		erb :rainy
 	else
 		erb :default
 	end
