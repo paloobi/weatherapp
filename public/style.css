@@ -1,10 +1,10 @@
-body {
+html, body {
 	font-family: Helvetica, Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
-div.info {
+div.info, form {
 	position: relative;
 	text-align: center;
 	font-size: 150%;
@@ -25,6 +25,7 @@ div.wrapper {
 	background-color: #E8FFFF;
 	margin: 0;
 	padding: 0;
+	position: absolute;
 }
 
 
