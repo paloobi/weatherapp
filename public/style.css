@@ -1,10 +1,11 @@
 body {
-	background-position: center center;
-	background-color: #E8FFFF;
-	background-repeat: no-repeat;
 	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
 }
-div {
+
+div.info {
+	position: relative;
 	text-align: center;
 	font-size: 150%;
 	top: 50%;
@@ -15,6 +16,42 @@ div {
 	font-size: 200%;
 }
 
-body {
+div.wrapper {
+	height: 100%;
+	width: 100%;
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #E8FFFF;
+	margin: 0;
+	padding: 0;
+}
+
+
+div.home {
+	background-image: url("/map.png");
+}
+
+div.default {
+	background-image: url("/sunny.png");
+}
+
+div.sunny {
+	background-image: url("/sunny.png");
+}
+
+div.cloudy {
+	background-image: url("/cloudy.png");
+}
+
+div.snowy {
+	background-image: url("/snowy.png");
+}
+
+div.fair {
+	background-image: url("/sunny.png");
+}
+
+div.rainy {
+	background-image: url("/rainy.png");
 }
