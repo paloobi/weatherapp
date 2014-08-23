@@ -1,6 +1,7 @@
 <div class="wrapper <%= @weather %>">
 	<div class="info">
-		<p>The weather in <%= @location %> is</p>
+		<p id="intro">The weather in <span id="location"><%= @location %></span> is...</p>
 		<p id="weather"><%= @weather %></p>
-	<div class="info">
+		<p><a href="/">Try Again?</a></p>
+	</div>
 </div>
