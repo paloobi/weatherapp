@@ -1,19 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Fredoka+One|Cabin+Sketch:400,700|Varela+Round);
+
+/* Universal Styles */
+
 html, body {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Fredoka One', sans-serif;
 	margin: 0;
 	padding: 0;
-}
-
-div.info, form {
-	position: relative;
-	text-align: center;
-	font-size: 150%;
-	top: 50%;
-	bottom: 50%;
-}
-
-#weather {
-	font-size: 200%;
 }
 
 div.wrapper {
@@ -22,16 +14,109 @@ div.wrapper {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-color: #E8FFFF;
+	background-color: #EDFFFF;
 	margin: 0;
 	padding: 0;
 	position: absolute;
 }
 
+/* Homepage Styles */
+
+
+h1 {
+    color: #ebebeb;
+    font-family: 'Cabin Sketch',"Comic Sans MS",cursive,sans-serif;
+    font-size: 600%;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 3px lightpink;
+    word-spacing: 0.1em;
+}
+
+form {
+    bottom: 50%;
+    color: white;
+    font-size: 250%;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 4px black;
+    top: 10%;
+}
+
+input {
+	margin: 20px;
+	padding: 10px;
+	font-family: 'Varela Round', Arial, sans-serif;
+	border-radius: 14px;
+}
+
+input#text-input {
+    border: medium none;
+    border-radius: 14px;
+    height: 50px;
+    margin-right: 0;
+    width: 300px;
+}
+
+input#button {
+    background-color: #d6d6d6;
+    border: medium none;
+    color: #595959;
+    font-size: 50%;
+    height: 50px;
+    letter-spacing: 0.05em;
+    width: 120px;
+}
 
 div.home {
 	background-image: url("/map.png");
 }
+
+
+/* Weather Page text styles */
+
+div.info {
+    bottom: 50%;
+    color: white;
+    font-size: 250%;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 4px black;
+    top: 25%;
+}
+
+p#intro {
+    color: gray;
+    font-size: 50%;
+    letter-spacing: 0.2em;
+    text-shadow: none;
+    word-spacing: 0.2em;
+}
+
+#location {
+	text-transform: capitalize;
+}
+
+#weather {
+    color: #6bb6cf;
+    font-family: 'Cabin Sketch',"Comic Sans MS",cursive,sans-serif;
+    font-size: 400%;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+a {
+    color: goldenrod;
+    font-size: 38%;
+    text-decoration: underline;
+    text-shadow: none;
+}
+
+/* Weather Page backgrounds */
 
 div.default {
 	background-image: url("/sunny.png");
